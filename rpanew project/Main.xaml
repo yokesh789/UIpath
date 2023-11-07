@@ -1,0 +1,363 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="864,5316" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="50">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>UiPath.Activities.Contracts</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="64">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Activities.Contracts</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="654.4,5251.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="stringof" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Edge: Domino's ZERO Contact Delivery - Great Taste, Delivered Safe" sap:VirtualizedContainerService.HintSize="592,2247.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="0520f97f-0307-4b2c-8d2f-b9f5b6218866" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,2020.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="otp" />
+              <Variable x:TypeArguments="x:String" Name="save" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MaximizeWindow Window="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="337.6,32" sap2010:WorkflowViewState.IdRef="MaximizeWindow_2" />
+            <Delay Duration="00:00:02.0020000" sap:VirtualizedContainerService.HintSize="337.6,98.4" sap2010:WorkflowViewState.IdRef="Delay_5" />
+            <uix:NClick ClickType="Single" DisplayName="Click 'MY ACCOUNT'" sap:VirtualizedContainerService.HintSize="337.6,167.2" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0520f97f-0307-4b2c-8d2f-b9f5b6218866" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://pizzaonline.dominos.co.in/menu" DesignTimeRectangle="1742, 151, 96, 15" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'MY ACCOUNT'" FullSelectorArgument="&lt;webctrl aaname='MY ACCOUNT' parentid='__next' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='MY ACCOUNT' parentid='__next' tag='DIV' type='' class='' check:innerText='MY ACCOUNT' /&gt;" Guid="bdd2f862-c0f2-49bd-9433-e66195382b82" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGQAAAATCAYAAABmxagtAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAPOSURBVFhH7VhPSypRFPer+BH6Ci1dtmwr9AVc5rLgLYw2s3sRbkKIWhQFPUTJ98gwQolIQ1GiiFEKRTJGQ/m9c/85V70+E4dngRd+MHPPmXvvOb/zZ2Z8vrUYFvhCME4uMD8YJxeYH4yTC8wPxskvBv/WH6zuphHYNMv7CCexQnqr1plZrrCZ4uutbB2b5fOEe1NGHjR6dVhhTUHh6AUOk79XEVo7Rui+A3zUERnRlbI2yf7pwCT2amxBIBs3yY+xGq+i0hY6ajivVUSsQV3/zwISr12pIUe7hcSv1IDeUuwB+TcpV8Ogx8/P7XTnFHZsesYuy3vhM4fuA0N6Spa/cK/HjcZ9zn1ueAE2KldJV0Ei8iiF6qDhHBJknPNYgF/T8x9U0UAX6ZMJ0Rd9hk16Deagx+LAGpzUPKO/g/xlDsuSdP9WDoc1cvxHE9YPOUf72T0y6vkBIRXxlCmhbIsCqIv8ebyv16AV7VIRQRUomxlY947Qu3BJmZYQDD2vywQhZwiwzOUoIP1OPr5W90OZOrxApdYCms8I9ucJ4SKyvS7JBg+qnJ+NK0cQSbQZY3zQwaPgRrN9TljmtbC3rcn3xbqjRjKkEIyqkiT2M0doDIFoBkv8+gZpyjSnfGc4l8zoXhM78gzTEmIzn1HwJPZ1XZ0QHeLMo/MS7o1c4FI4P33kKi1fCZIsw0FDeZrjpUsaxuSmkjcA4SCRieLavs305RtlyoLhoDCBk+ngNGqQ6ZikxwOOOUkE1rSEsMDZsenMb7rtXhFCiuslWrxfRjI4bQrnmQ8qS1eTmUxRcjChVBH8yTrtRBEpDx+8pfLUfsG6lHOjqRTqzxhxQQejnhcxyXQwPVp/wyTjuOY2qFo+PSF0HS4g+6GXcA8JESVDlhHWzGWjH3tQ3g8+V6r6zVzvG9sPqNBUNinI/JaE0L0q4aLUekmIzAr79hoWNXOndMN1xh903OYGSPIqpQfsXSo8IU+HVCR9v5Kl5LJsUzAfWp4SIvvGe4cYd5uVF4Twckg9ymkPgdKdGcKz8r82dbKL9UGtqft+UzQOv2hwiHXc11ST3SkcvtLkG/Odh4SoqNEjdXZCqM7SmnoD70PuJ2TqtZfe7LKfe+11ak+evfb6wneCQH1Npltm0a9n2hi7WXbwAPOSEMJ6qTPwTTIrIaKZk0G7ZjnPnn5zpw/D8xfY5Bh9mD8Mi0jX6Vl9zPBhyMDWzBp0T4/0vwDj7V6mLGMhNQMhXxdLlviAmvjrRP4SmfTrRP2KmfiLhTCNricwTi4wPxgnF5gfjJMLzAkx/AU4rtXmC8eAZgAAAABJRU5ErkJggg==" InformativeScreenshot="c8d8b0400be5475cb07b570cddcdf518.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Domino&amp;apos;s ZERO Contact Delivery - Great Taste, Delivered Safe' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="337.6,228" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="0520f97f-0307-4b2c-8d2f-b9f5b6218866" Text="7010544361" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://pizzaonline.dominos.co.in/menu" DesignTimeRectangle="1455, 630, 376, 61" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl name='loginNumber' tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl name='loginNumber' tag='INPUT' type='text' class='' aaname='' /&gt;" Guid="cec217a6-4242-4846-bb67-dd4e530859bd" ImageBase64="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" InformativeScreenshot="62e6e739c339d4d628bc8a42e3df138e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Domino&amp;apos;s ZERO Contact Delivery - Great Taste, Delivered Safe' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'SUBMIT'" sap:VirtualizedContainerService.HintSize="337.6,167.2" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0520f97f-0307-4b2c-8d2f-b9f5b6218866" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://pizzaonline.dominos.co.in/menu" DesignTimeRectangle="1691, 716, 140, 48" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'SUBMIT'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='non-empty' aaname='SUBMIT' check:text='SUBMIT' /&gt;" Guid="2c610f74-ca00-485b-83e2-594db74a4841" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJAAAAA0CAYAAABly7FAAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAASkSURBVHhe7Z3Nb1RVGMbdu3Dpf+DWhQt3Ju6MG1fGaNyYaNhoNNEQTRBjlKBRjImCGkMwBtJYAQGLfFjUWhlEii2FllootJZp6Qct0047H52Z13le5tyc+8504GSazE18HvKD9txz77nt+fWcd27I9D5hmBZCgZiWQoGYllInULGUq/5dufMJw2gqNS/qExOoWM7LF6nnZNP+B+Sl7+8nRIEP8AJ+2EQCwTB0anQBQoBKZFYibwWqcOUhTYEftryJbWGNTiLEx4YCkSBsKBAJwoYCkSBsKBAJwoYCkSBsKBAJwoYCkSBsKBAJwoYCkSBsKBAJwoYCkSBsKBAJwoYCkSBsKBAJwibxAr3yw4Py0+WPZC57XdbKealU/+TXsjKVGZHvBjZH/bqGt1ePF6RYWpX9g1ti1wC7/3pRcmvLUqmU5ZerX2lb77Vval95fcqVNR1j5+lnomtcnvm1dlRktZiRr8++EB1z7Pv7Nb0/xB/LnTufHZdt3Y/FrrVe1vta2olN4gW6NH1SpUEgECbHfY5/R2Z7tF8rApUrJb0ujoNCaSUaY3E1LTt6ntT+dtL7Jg/GxgCDU8dqR5sLNDB1NBoPY+MeENy/a1/Kz0nnhTfrxmgnNokWaM+5TZIrLuk39+L0Cdnc9ZC2f/zbE9KfPiLZwi05MrRN21oRKFtYkC/PPB/rnxrfp+OWykU5PvKJtlmBZpbHZMvxh6Nztp96XOZXJmpHmwvkzgEQFKIiA+mu2LGkYZNogZwU4Ojwh3XH3z35qG5xft+NEsj1h0Tdozu1zUkAqfF/g7EiHh56Pzrn2MgOFQ7bG+6FArUZ1BgrhUW9N0zI9YU+6eh/PVqJfDZSIFy/P/2j9s3kbsqu1LPa7kuQzgzrx2Pzf+oxiDyxOKDn/DPbWzcWBWoTPWO79afdD1YFTMSBwbejfq0I1CiogW6tTMZqEF+CU1d2RasNRHfbLfh59DMKlCRQ85yZ6JDbuemo2EQwyaiF0KcVgXBNv4h2hbp/feBL8PkfT2u9gz6Q/Oy/nfrx5O1B+bbvZQqUVLC9oHBezs/rPbvtZ6NrIDw6wPX8OsdK4KSBSAurN3RFwurTaCwK1Cbw07z1xCN17SiqfWGwjWA7QVLje+v6Y8vBsx28RO+88Ja2NRPIn9TzNw5rm5XAr9EQ9Md5FCghdPS/odsJCllMunvFhZfLV6vFK7KUn9Ui1xWxCOqQQ5fei66DB47oh0wvjer5aL+XFQgSOCEbSTA6d1rbsBIN3ezWNgqUELBVYSJcsIL4D90wwb3X9kT9955/VWVwwerkPxTECuWeGwEnEI77NZB/TiY3o0KgfyMJDl58pzpOTs9zKxsFShAooM9NHtCJhECYWEwwVpKu4Q/q+n/6+1O6EqBGQn+Aj6/MpSIRHE6gRsF5GGO9V2FOAjxIRD8Uz+6hIgUiZB1sKBAJwoYCkSBsKBAJwoYCkSBsKBAJwoYCkSBsKBAJwoYCkSBsKBAJwoYCkSBsKBAJwsYTiO8TTZrT9H2i+U715G7c5Z3qqxKV+bsySD3wQeWp+mETEwi5Y1h8mWL+77nH39bDMKGhQEwLEfkPNERsF7h7LN0AAAAASUVORK5CYII=" InformativeScreenshot="b609e4966dd0c9345d998b92e018029e.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Domino&amp;apos;s ZERO Contact Delivery - Great Taste, Delivered Safe' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="337.6,98.4" sap2010:WorkflowViewState.IdRef="Delay_6" />
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="337.6,251.2" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="oo" Title="enter otp">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:String">[otp]</OutArgument>
+              </ui:InputDialog.Result>
+            </ui:InputDialog>
+            <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="337.6,98.4" sap2010:WorkflowViewState.IdRef="Delay_7" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'DIV'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="337.6,228" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="0520f97f-0307-4b2c-8d2f-b9f5b6218866" Text="[otp.ToString]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://pizzaonline.dominos.co.in/menu" DesignTimeRectangle="1407, 655, 383, 54" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' parentid='__next' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='__next' tag='DIV' class='sc-iAyFgw jpVqQG' aaname='' /&gt;" Guid="45451c08-c4de-4049-92f3-3c55ec6e7dd3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAYMAAAA6CAYAAABS1jUbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAIiSURBVHhe7duhbxNRHMDx92fUTpIgZmdJEMOxBEET1CSSIAjBLAuqf8GykCBaQTKBgAQxRVJcccMVWYE4MVFR8eO1e2u73daUBEa3fj7JT7y7S+V98+56KeaNhlFVVVTDsgZgLZzFYHAcraf3opFSpDIb2y+i/WNWhe7e7FxtnrRjkK8ZdHZq5xr3m9H6Wp39CAArKcXPdjQbG7H7rhfVqBwdVdHrPI+ttBX730oQTvOOYbxryHNykG/6rz5N11XZSkxi8PgwTqbHq+h/fj35ndb3ySUArKB0uJ3i0UG/LC/qd5rR2NyP7qXHRpOb/l63rGYmx8suYWYYxy/zDuFtr6yv9/7jF2OMMTc089KDtBtHv8qqphetzUbeHZRl8WcxiOi+WS4GANyMWgzSw8O4el8wNoijZyl2Ohdv70vHYDT0mAhgBf37GHiBDLDy/stjIgBWSy0Gi14gDz78jRfIAKyaWgyW/mvpHDEAuN3qMRhb4qOzeWIAcLtdHYNzw/Kx2GlZA3AnLY4BAGtBDAAQAwDEAIBMDAAQAwDEAIBMDAAQAwDEAIDs2hhcPgHA3SUGAIgBAGIAQCYGAIgBAGIAQCYGAIgBAGIAQCYGAIgBAGIAQCYGAIgBAGIAQCYGAIgBAGIAQCYGAIgBAGIAQCYGAIgBAGIAQCYGAIgBAGIAQCYGAIgBAGIAQCYGAIgBAGIAQLYwBsYYY9Zn5k1jAMC6ivgNWHWdXN0W7nEAAAAASUVORK5CYII=" InformativeScreenshot="a25328a5879d771c554d2248a0b4b994.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Domino&amp;apos;s ZERO Contact Delivery - Great Taste, Delivered Safe' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'SUBMIT'" sap:VirtualizedContainerService.HintSize="337.6,167.2" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0520f97f-0307-4b2c-8d2f-b9f5b6218866" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://pizzaonline.dominos.co.in/menu" DesignTimeRectangle="1692, 746, 64, 19" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'SUBMIT'" FullSelectorArgument="&lt;webctrl aaname='SUBMIT' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='SUBMIT' tag='SPAN' type='' class='' check:innerText='SUBMIT' /&gt;" Guid="097d0419-7825-4b93-8963-4110b4e8d737" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAAAXCAYAAACyCenrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHFSURBVFhH7ZNNSgNBFITd52aeQ8/iyiMI7rN1L+JGcgCzEReCghARiRhDkJYa+GLNczoZzbQbu6CYobvf39cze4fjUar+cgUSXIEEVyDBFUhwBRL8DcjxxX56frtProeXaevM2fVRWn0sG+vd92Sdl5RH+U4mB2mxmjdrOV3enq7jyY9ifZkaEn14HfLp2UecbwHZ1DjD6VwJINL08byVHylWOcgf8xUDQrAP6gkJ2gUIQ2P/IjkfgUjUlr0naROQaHrr+urkFhA1K/mNeMPxBocAIse6DuR1+dQ8PY787BUD4o1IuaAhgThw6nkfN7Or5p1cnNea9iT6GByIzG25uDnO7AIkJ856fmlyN14D0Dp7WtOexF4RIHJuAIrQFI3E+N8Akfh6yC+pJpekp79rTyoOxO3NMWBfIBT1RhnazZDk85oajMHn77PGkq8TNygQ/s2uwxRWMRXdVvinQGK+CMT3JfqgryJA5HhTWnNQfCG+RnPkoEmJ4b3RLiAeo/cIRGcYRGIY4ooB8YRd8iI0k5OD2pYXxV9SoqbXi2vFgMh++8i/GHdu0FisDxCP6QLCmvfyJ0D+uyuQ4AokuAIJrkBaHqVP+EkeJTTi2zoAAAAASUVORK5CYII=" InformativeScreenshot="cc8b2972d9aab6e5937e451f4c4fd595.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Domino&amp;apos;s ZERO Contact Delivery - Great Taste, Delivered Safe' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="1659, 734, 129, 45" ElementType="Button" FriendlyName="'SUBMIT'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='' class='btn--grn' aaname='SUBMIT' check:innerText='SUBMIT' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIUAAAAxCAYAAAD0gWpfAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALFSURBVHhe7Zy/ahVBGMXtY+nb+AY+R2LhcwhWPoJgnQtWksZCxEbS2ZhGLAQDQkQkQQ1Bxj2rv4/vTmaTq7mbXHbPgR93mT/fDHPOzu32VrGsSg6FdU4OhXVOS6F4e7hXHr64W+4vbpedxZaZOPJZfsv3rAiFOh48u1N2drfKdkeriJkWvc8d8j0HI0KhxGhAa7KZOJ3v8h9FKHSV+IaYJ/Jd/qMIRWuwmRfIoTABcihMgBwKEyCHwgTIoTABcihMgBwKEyCHwgTIoTABcihMgDYyFI9f3Stfv3/6u7M/Ovx2sDTm+btH5ezXaY+ec5/QeEl1VO/J/nb5cXbctw3p9YenMZ/6qF5fsIbEPvI61NPvKsrr3wRo40JxkXkYrHFjhEI6+PxyqT7SXNWgfl3PoRgRDjCbnQ+Vg7tKKDAe8s3E+DoUUjYt70m6KBQ17K11+9wkaONCIcOk/GZm0+o3eR2hEPW6ORQnp1/63zyP+vQ5FCOSzZCGDm6docihY728j/dHb/pnajFebeqT2IdDMRK8tVm8wYy5SiiGxNhcX9r/uIgQqJ0+talPos+hGJEhEzlojMGMev7/hELiFqG+pDUJqn7zs/okh+KayQZh8qqh4OCzWRifwWjq5TVlLuYf/zzqkXI78xyKNcN/tVQfGIevA9fBX3b4/xqKul4ditwvsQ/25VCMSP3Gqi2HhZsit2EQNTBKIgDZrFYo8hw916HQGMyUMJR5DsWI5ENtKR80hgwph+Wyuqj+e5JYM69XtzkUI5NvAZRvjsyQ2fWBrxKKPKcVCtryXhwKM2mQQ2EC5FCYADkUJkAOhQmQQ2EC5FCYADkUJkAOhQmQQ2EC5FCYADkUJkAOhQmQQ2ECFKHw1/Hmy+DX8fwdzRnT+d78jqa/uDs/ep87Br+4K6lDidFV0ipipoV8lt85ENJSKCyrlFJ+A/IBG73C1C7mAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFPSURBVDhPY/j//z9FGKsgDsyIRYwoA7i+bdy998vCteeBbBE0OfwG/Pv3j+vb+l37n8pY/n8qaf7/86zlGIagaEDGIM1f1+2Ea4ZhdEMwNIIwWPN6hOZvm/f+/3nuCsKQeavPA9Uwg9Ri1bzswuP9a6es+f9U3gas4euqrf9/HDkDN+DLonWnsRoA08xcuf4/e/WG/8iGwPDn+avPAtUKwfRg1cxQsQ6M0Q1B1wzCcMbKi4/3Gk7c+//2m8///RYe+++/6Pj/i88+/Nfu3w025POCtRiaQRhMAG1nnH787nnTKfv+v//263/E8lP/U9ee+//t15//RpP2/Z92/B5WzSCMzBHpP3LrPMz5IAzyztRjd3FqBmF0AbghjEBMSDMIYxMUmXLszvmZJ++dfvP1p8qyC48if/z+y4pFHRhjFQRiUByD45kQxipIPP7PAAATjOf5fSb/EgAAAABJRU5ErkJggg==" InformativeScreenshot="cba18b109e19f24f8abac0752a8cab04.jpg" Selector="&lt;html app='msedge.exe' title='Domino&amp;apos;s ZERO Contact Delivery - Great Taste, Delivered Safe' /&gt;" Title="Domino's ZERO Contact Delivery - Great Taste, Delivered Safe" Url="https://pizzaonline.dominos.co.in/menu" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Edge: Domino's ZERO Contact Delivery - Great Taste, Delivered Safe" sap:VirtualizedContainerService.HintSize="592,988.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="0b83a9fe-d916-454b-86e9-688d899940ef" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,762.4" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'VEG PIZZA'" sap:VirtualizedContainerService.HintSize="337.6,167.2" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="0b83a9fe-d916-454b-86e9-688d899940ef" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://pizzaonline.dominos.co.in/menu?categoryId=1" DesignTimeRectangle="831, 207, 79, 15" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'VEG PIZZA'" FullSelectorArgument="&lt;webctrl aaname='VEG PIZZA' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='VEG PIZZA' tag='SPAN' type='' class='' check:innerText='VEG PIZZA' /&gt;" Guid="2855b9b2-2fca-480f-9e54-a9b420b709d1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFMAAAATCAYAAADs6jFsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAANdSURBVFhH7Vd/T+JAEL3v/3lIE0KiWEuB2ooIAuJxcoKcEMLpeXpG0rybbme3222rxPTPvmQSur/37cyb4RsqlIaKzBJRkVkiKjJLREVmiWAyd+i3HdSOHRxNH+MmHbsrNKivduJj9AfYjjpibJ5ZFwuexNhvMBkGOLK1MY4Pf/GIkIfk4SZIryut3r3C3Z4H4RYt0e5j8Kx/51t8tg3OW/n9wjrXeIqW0hAu+7C4v3655NYslGe+fffjxdwxttwm8WsYk2cFt3ijb0mm5QZo93ppm67iSYRwe42mJNH2YEf9Zx6sJh+svygkVJJZ7yZr25KE1hWf0SRzhYE8h7RzD3UxhtYaRmd7xGxojOkFaPCZLH+GNJn79MOe9DHnHhNJmL/NYIsJHfgbbhNYoH0StbtoLV5FiyLT9EId4YPygPrFHM86a/sVzoMA/VWxd8oLpCIlXMI71c9okmlij/mFK9apOURC5Ak5eJqyI9kUeTtulJC82AHsTrSXQzxwnwFNM2njXryx7srKxZ0B7vnmB5F5z/PIi9YfxXMByiDz5WcvPgPJU3+rtCGFcMsSRmu2l6RhBp4mnrrrO60X/a55N3jhfh3pBLQZxCGhXDlx8cY4cddDNDNLeF54jXH3zt0G5L6JlARoCiLJXPlAH5D5Sn1CYlw0pw/5ERBFjxuvGUVPlqAVfCfq78Bb02OEc45SD/3fPERDmkw1mV1ZhT5N1tz/EM1UoUM6GyNP+IvCsyABNV0cBfQAf6WXFZG5w4BD0jozNVBCl4Ak6lKQzqXlEZk/GmMzs2TITNw6IkEmJYvcWj/QQWG+5oMc9zDjpgSS2M/JzK0uFPLI3GM94jtEOhnLfAZKAkgnB7kSkMhejaoP5SxdjspTegAeKZEhU09EDXHhJPFIHERmyjtusNNffr9g7SufzM80UOCV7shJtVACFA/FZiaiLJmaTgqz6XWN3ZRm6i/G5v3Q3D/SLalzzQ6aPo3RSyPvujA5fY1MeiRZip16aBlna08oiZB2j7o8hs4kyjXdLmcipA8pFRMJi5FDZpQ000WqeV9FZo5lvJWK9tnIKNrbATy6WKpcMvA1MuV3gYmC/JOiXSRf/U+MWSsR5J8Y2nf0j9sIuWRW+BoqMktERWaJqMgsDcB/uk102RApr08AAAAASUVORK5CYII=" InformativeScreenshot="bfacc93cab8ab692dd65aa294d5bce07.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Domino&amp;apos;s ZERO Contact Delivery - Great Taste, Delivered Safe' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'SPAN'" sap:VirtualizedContainerService.HintSize="337.6,116.8" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="8d58364e-342b-440c-8321-a51fb790ae04" InformativeScreenshot="190a779f5551c254204de19dd382adb4" Selector="&lt;webctrl aaname='ADD TO CART' idx='72' parentid='mn-lft' tag='SPAN' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'BUTTON'" sap:VirtualizedContainerService.HintSize="337.6,116.8" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d126ef57-b621-4114-b780-63b8aee16c39" InformativeScreenshot="3be6e3b9531a175e75a084d9f4ec2df9" Selector="&lt;webctrl aaname='ADD TO CART' idx='72' tag='BUTTON' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'DIV'" sap:VirtualizedContainerService.HintSize="337.6,116.8" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click.CursorPosition>
+                <ui:CursorPosition Position="Center">
+                  <ui:CursorPosition.OffsetX>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetX>
+                  <ui:CursorPosition.OffsetY>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:CursorPosition.OffsetY>
+                </ui:CursorPosition>
+              </ui:Click.CursorPosition>
+              <ui:Click.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="61dff950-2f7d-416b-9853-61cc06402034" InformativeScreenshot="cb8577af094e483391c9445a342a482b" Selector="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='6' parentid='__next' tag='DIV' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:Click.Target>
+            </ui:Click>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Edge" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFPSURBVDhPY/j//z9FGKsgDsyIRYwoA7i+bdy998vCteeBbBE0OfwG/Pv3j+vb+l37n8pY/n8qaf7/86zlGIagaEDGIM1f1+2Ea4ZhdEMwNIIwWPN6hOZvm/f+/3nuCsKQeavPA9Uwg9Ri1bzswuP9a6es+f9U3gas4euqrf9/HDkDN+DLonWnsRoA08xcuf4/e/WG/8iGwPDn+avPAtUKwfRg1cxQsQ6M0Q1B1wzCcMbKi4/3Gk7c+//2m8///RYe+++/6Pj/i88+/Nfu3w025POCtRiaQRhMAG1nnH787nnTKfv+v//263/E8lP/U9ee+//t15//RpP2/Z92/B5WzSCMzBHpP3LrPMz5IAzyztRjd3FqBmF0AbghjEBMSDMIYxMUmXLszvmZJ++dfvP1p8qyC48if/z+y4pFHRhjFQRiUByD45kQxipIPP7PAAATjOf5fSb/EgAAAABJRU5ErkJggg==" InformativeScreenshot="178b201d131ff0af1a07f9efc75dd377.jpg" Selector="&lt;html app='msedge.exe' title='Domino&amp;apos;s ZERO Contact Delivery - Great Taste, Delivered Safe' /&gt;" Title="Domino's ZERO Contact Delivery - Great Taste, Delivered Safe" Url="https://pizzaonline.dominos.co.in/menu?categoryId=1" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="592,1812" sap2010:WorkflowViewState.IdRef="Sequence_14">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Edge" DisplayName="Attach Browser 'DominosZE Page'" sap:VirtualizedContainerService.HintSize="529.6,1688.8" sap2010:WorkflowViewState.IdRef="BrowserScope_3" InformativeScreenshot="4a1320eaf293fd636252352e5a7154dc" Selector="&lt;html app='msedge.exe' title='Domino&amp;apos;s ZERO Contact Delivery - Great Taste, Delivered Safe' /&gt;">
+        <ui:BrowserScope.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,1532" sap2010:WorkflowViewState.IdRef="Sequence_13">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:ExtractData DelayBetweenPagesMS="{x:Null}" NextLinkSelector="{x:Null}" ContinueOnError="True" DataTable="[ExtractDataTable]" DisplayName="Extract Structured Data 'DIV'" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='PIZZA NAME' attr='text'&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='QUANTITY' attr='text'&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='PRICE' attr='text'&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='span' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="433.6,116.8" sap2010:WorkflowViewState.IdRef="ExtractData_3" MaxNumberOfResults="100" SimulateClick="True">
+                <ui:ExtractData.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f5a5ae58-bbd8-4bac-ae35-077f08e16b0b" InformativeScreenshot="4555fdd9891e7f870bff12a198d8f20a" Selector="&lt;webctrl class='inr-lft' parentid='__next' tag='DIV' /&gt;" WaitForReady="COMPLETE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:ExtractData.Target>
+              </ui:ExtractData>
+              <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="433.6,741.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" InstanceCachePeriod="3000" WorkbookPath="extract.xlsx">
+                <ui:ExcelApplicationScope.Body>
+                  <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,622.4" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:ExcelWriteRange AddHeaders="False" DataTable="[ExtractDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="337.6,97.6" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_2" SheetName="Sheet1" StartingCell="A1" />
+                      <ui:ExcelReadRange DataTable="{x:Null}" AddHeaders="True" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="337.6,69.6" sap2010:WorkflowViewState.IdRef="ExcelReadRange_2" Range="A1:C2" SheetName="Sheet1" />
+                      <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="337.6,95.2" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;order confiemd&quot;]" />
+                      <ui:CloseApplication DisplayName="Close Application 'push button  Close'" sap:VirtualizedContainerService.HintSize="337.6,116.8" sap2010:WorkflowViewState.IdRef="CloseApplication_1">
+                        <ui:CloseApplication.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e5c76940-a568-483a-a918-d0ba3d8c719b" InformativeScreenshot="f4829d43317ca154d5a4ad96b26837bc" Selector="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Domino&amp;apos;s ZERO Contact Delivery - Great Taste, Delivered Safe and*' /&gt;&lt;ctrl name='Domino&amp;apos;s ZERO Contact Delivery - Great Taste, Delivered Safe - M*' role='pane' /&gt;&lt;ctrl name='Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Close' role='push button' /&gt;">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                            <ui:Target.WaitForReady>
+                              <InArgument x:TypeArguments="ui:WaitForReady" />
+                            </ui:Target.WaitForReady>
+                          </ui:Target>
+                        </ui:CloseApplication.Target>
+                      </ui:CloseApplication>
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ExcelApplicationScope.Body>
+              </ui:ExcelApplicationScope>
+              <ui:OutputDataTable DataTable="[ExtractDataTable]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="433.6,90.4" sap2010:WorkflowViewState.IdRef="OutputDataTable_3" Text="[stringof]" />
+              <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="outputfile.txt" sap:VirtualizedContainerService.HintSize="433.6,144" sap2010:WorkflowViewState.IdRef="WriteTextFile_2" Text="[stringof]" />
+              <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="please check it" DisplayName="Send SMTP Mail Message" Email="200701303@rajalakshmi.edu.in" EnableSSL="True" sap:VirtualizedContainerService.HintSize="433.6,156" sap2010:WorkflowViewState.IdRef="SendMail_2" IgnoreCRL="False" IsBodyHtml="False" Password="Yokesh457#" Port="465" SecureConnection="Auto" Server="imap.gmail.com" Subject="this is order details" To="200701295@rajalakshmi.edu.in">
+                <ui:SendMail.Files>
+                  <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                    <InArgument x:TypeArguments="x:String">
+                      <Literal x:TypeArguments="x:String">outputfile.txt</Literal>
+                    </InArgument>
+                  </scg:List>
+                </ui:SendMail.Files>
+              </ui:SendMail>
+            </Sequence>
+          </ActivityAction>
+        </ui:BrowserScope.Body>
+      </ui:BrowserScope>
+    </Sequence>
+  </Sequence>
+</Activity>
